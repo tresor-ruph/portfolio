@@ -1,0 +1,29 @@
+
+
+.line {
+  height: 3px;
+  position: absolute;
+  background: #ff1847;
+  -webkit-transition: 1s ease;
+ 
+}
+
+#nav-elt {
+  margin-right: 5em;
+}
+.nav-items {
+  margin-right: 2em;
+  font-family: 'Waiting for the Sunrise', cursive;
+  color: white;
+  font-size: 20px;
+
+
+}
+
+.navbar {
+  font-family: 'Waiting for the Sunrise', cursive;
+  color: white;
+  min-height: 5em;
+  background-color: black;
+}
+
