@@ -1,9 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useRef, useState } from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
+import { withRouter } from "react-router-dom";
 import "./MainNav.css";
-
-const MainNav = () => {
+const MainNav = (props) => {
   let link1 = useRef(null);
   let link2 = useRef(null);
   let link3 = useRef(null);
@@ -27,6 +26,16 @@ const MainNav = () => {
   let line = useRef(null);
 
   useEffect(() => {
+    console.log("mounted")
+    console.log(props.history.location.pathname);
+    navItem.forEach((elt) => {
+      if (`/${elt.value}` === props.history.location.pathname) {
+        console.log(elt.value)
+        setActive(elt.ref);
+      } else if (props.history.location.pathname === "/") {
+        setActive(link1);
+      }
+    });
     handleResize();
     setStyle(active);
     window.addEventListener("resize", handleResize);
@@ -34,11 +43,10 @@ const MainNav = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [winHeight, winWidth]);
+  }, [winHeight, winWidth, active,props.history.location.pathname]);
 
   const setStyle = (x) => {
     let elt = x.current.getBoundingClientRect();
-    console.log(elt);
     let x1 = elt.left;
     let x2 = elt.right;
 
@@ -51,46 +59,46 @@ const MainNav = () => {
 
   const handleSelection = (e) => {
     e.preventDefault();
-    console.log(e);
     navItem.forEach((elt) => {
       if (elt.value === e.target.innerText) {
         setActive(elt.ref);
         setStyle(elt.ref);
-
       }
     });
+    e.target.innerText === "About Me"
+      ? props.history.push(`/`)
+      : props.history.push(`/${e.target.innerText}`);
   };
 
   return (
-    <Navbar  variant="dark" className="navbar" fixed="top">
-     {/* <span className=".nav-elts">Tekadam Tresor</span> */}
+    <Navbar variant="dark" className="navbar" fixed="top">
 
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto"></Nav>
-        <Nav id='nav-elt'>
+        <Nav id="nav-elt">
           <Nav.Link
             href="about"
             ref={link1}
             onClick={(event) => handleSelection(event)}
-            className='nav-items '
-          > 
+            className="nav-items  nav-elts"
+          >
             About Me
           </Nav.Link>
+
           <Nav.Link
             href="portfolio"
             ref={link2}
             onClick={(event) => handleSelection(event)}
-            className='nav-items nav-elts'
-
+            className="nav-items nav-elts"
           >
             Portfolio
           </Nav.Link>
+
           <Nav.Link
             href="#resume"
             ref={link3}
             onClick={(event) => handleSelection(event)}
-            className='nav-items nav-elts'
-
+            className="nav-items nav-elts"
           >
             Resume
           </Nav.Link>
@@ -98,8 +106,7 @@ const MainNav = () => {
             href="#activities"
             ref={link4}
             onClick={(event) => handleSelection(event)}
-            className='nav-items nav-elts'
-
+            className="nav-items nav-elts"
           >
             Activities
           </Nav.Link>
@@ -110,4 +117,4 @@ const MainNav = () => {
   );
 };
 
-export default MainNav;
+export default withRouter(MainNav);

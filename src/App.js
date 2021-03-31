@@ -1,13 +1,13 @@
-import Main from './component/Home/AboutMe'
-import MainNav from './component/layout/Nav/MainNav'
+import Main from './route/index'
+import { BrowserRouter } from 'react-router-dom';
 
-// import MainFooter from './component/layout/Footer/MainFooter'
+
+
 function App() {
   return (
-    <div id="app"> 
-    <MainNav />
-    <Main />
-    </div>
+    <BrowserRouter id="app">
+      <Main />
+    </BrowserRouter>
   );
 }
 
