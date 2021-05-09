@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { withRouter } from "react-router-dom";
-import "./MainNav.css";
+import "./NavBar.css";
 const MainNav = (props) => {
   let link1 = useRef(null);
   let link2 = useRef(null);
@@ -20,7 +20,7 @@ const MainNav = (props) => {
   let navItem = [
     { ref: link1, value: "About Me" },
     { ref: link2, value: "Projects" },
-    { ref: link3, value: "Resume" },
+    { ref: link3, value: "Contact" },
     { ref: link4, value: "Activities" },
   ];
   let line = useRef(null);
@@ -93,14 +93,7 @@ const MainNav = (props) => {
             Projects
           </Nav.Link>
 
-          <Nav.Link
-            href="#resume"
-            ref={link3}
-            onClick={(event) => handleSelection(event)}
-            className="nav-items nav-elts"
-          >
-            Resume
-          </Nav.Link>
+         
           <Nav.Link
             href="#activities"
             ref={link4}
@@ -108,6 +101,14 @@ const MainNav = (props) => {
             className="nav-items nav-elts"
           >
             Activities
+          </Nav.Link>
+          <Nav.Link
+            href="#Contact"
+            ref={link3}
+            onClick={(event) => handleSelection(event)}
+            className="nav-items nav-elts"
+          >
+            Contact
           </Nav.Link>
         </Nav>
         <div className="line" ref={line}></div>

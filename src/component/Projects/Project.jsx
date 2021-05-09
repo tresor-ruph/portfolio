@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Card from "../card/Card";
 import Bounce from "react-reveal/Bounce";
-import data from "./../../Data/work";
+import data from "../../Data/Data";
 import ProjectDescription from "./Description";
-import "./portfolio.scss";
+import "./Project.scss";
 
-const Portfolio = (props) => {
+const Project = (props) => {
   const [view, setView] = useState("global");
   const [projId, setprojId] = useState(null);
   const [imgUrl, setImgUrl] = useState(null);
@@ -17,9 +17,6 @@ const Portfolio = (props) => {
   const displayView = (view, id) => {
     setView(view);
     setprojId(id);
-    console.log("data id", id);
-    console.log(data.projects);
-
     setImgUrl(data.projects[id].detailImageUrl);
     setDescription(data.projects[id].contentDescription);
     setTechnologies(data.projects[id].technologies);
@@ -65,4 +62,4 @@ const Portfolio = (props) => {
   );
 };
 
-export default Portfolio;
+export default Project;

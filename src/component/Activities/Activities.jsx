@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Card from "../card/Card";
 import Fade from "react-reveal/Fade";
-import data from "./../../Data/work";
+import data from "../../Data/Data";
 import ActivityDetails from './ActivityDescription'
-// import ProjectDescription from "./Description";
-// import "./portfolio.scss";
+
 
 const Portfolio = (props) => {
   const [view, setView] = useState("global");
@@ -25,7 +24,6 @@ const Portfolio = (props) => {
                   <Card
                     key={index}
                     heading={project.title}
-                    paragraph={project.para}
                     imgUrl={project.imageSrc}
                     projectId={index}
                     view={displayView}

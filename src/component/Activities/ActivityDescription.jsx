@@ -3,7 +3,6 @@
 // // import "react-slideshow-image/dist/styles.css";
 // // import Card from "../card/Card";
 // // import DetailsCards from './detailsCards'
-// // import data from "./../../Data/work";
 // // import {Table} from 'react-bootstrap'
 
 // // import test from '../../asset/test.png'

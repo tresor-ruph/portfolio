@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import "./description.scss";
+import "./Description.scss";
 import Fade from 'react-reveal/Fade';
 const ProjectDescription = (props) => {
-  const toggleView = () => {
-    props.view("global", "");
-  };
+  // const toggleView = () => {
+  //   props.view("global", "");
+  // };
 
   return (
     <div className="main">
@@ -41,7 +41,7 @@ const ProjectDescription = (props) => {
                 Github
               </a>}
              
-              {props.link[1] !== undefined && <a href="#" className="btn">
+              {props.link[1] !== undefined && <a href={props.link[1]} className="btn">
                 Website
               </a>}
             </div>
