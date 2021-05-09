@@ -19,15 +19,14 @@ const MainNav = (props) => {
 
   let navItem = [
     { ref: link1, value: "About Me" },
-    { ref: link2, value: "Portfolio" },
+    { ref: link2, value: "Projects" },
     { ref: link3, value: "Resume" },
     { ref: link4, value: "Activities" },
   ];
   let line = useRef(null);
 
   useEffect(() => {
-    console.log("mounted")
-    console.log(props.history.location.pathname);
+   
     navItem.forEach((elt) => {
       if (`/${elt.value}` === props.history.location.pathname) {
         console.log(elt.value)
@@ -86,12 +85,12 @@ const MainNav = (props) => {
           </Nav.Link>
 
           <Nav.Link
-            href="portfolio"
+            href="Projects"
             ref={link2}
             onClick={(event) => handleSelection(event)}
             className="nav-items nav-elts"
           >
-            Portfolio
+            Projects
           </Nav.Link>
 
           <Nav.Link

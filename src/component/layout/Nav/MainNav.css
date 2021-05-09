@@ -13,9 +13,9 @@
 }
 .nav-items {
   margin-right: 2em;
-  font-family: 'Waiting for the Sunrise', cursive;
+  /* font-family: 'Waiting for the Sunrise', cursive; */
   color: white;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .navbar {

@@ -7,14 +7,19 @@
 
 #demo {
   position: absolute;
-  font-family: 'Waiting for the Sunrise', cursive;
-  /* border-right: .1em solid orange;  */
   top: 35%;
   left: 30%;
   transform: translate(-50%, -50%);
-  font-size: 30px;
+  font-size: 1.1rem;
+  color: grey;
+  /* text-align: center; */
+}
+
+
+#test14 {
+  font-size: 1.3rem;
   color: white;
-  letter-spacing: 10px;
+  /* text-align: center; */
 }
 
 .droite {

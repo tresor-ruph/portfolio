@@ -3,10 +3,12 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import AboutMe from '../component/Home/AboutMe'
 import Portfolio from '../component/portfolio/Portfolio'
 import MainNav from '../component/layout/Nav/MainNav'
+import Activities from '../component/Activities/Activities'
+import Contact from '../component/contact/Contact.jsx'
 import { withRouter } from 'react-router-dom'
 
 
-const Main = () => {
+const Main = (props) => {
     return (
 
         <BrowserRouter>
@@ -15,10 +17,10 @@ const Main = () => {
                 <Route exact path='/' component={AboutMe} />
                 {/* <Route exact path='/About-me' component={AboutMe} /> */}
 
-                <Route exact path='/Portfolio' component={Portfolio} />
-                <Route exact path='/Resume' component={Portfolio} />
-                <Route exact path='/Activities' component={Portfolio} />
-
+                <Route exact path='/Projects' component={Portfolio}  />
+                <Route exact path='/Resume' component={Contact} />
+                <Route exact path='/Activities' component={Activities} />
+                
 
             </Switch>
         </BrowserRouter>
