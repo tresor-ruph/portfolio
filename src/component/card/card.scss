@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
+  margin-bottom: 2rem;
   .content {
     font-family: "Open Sans";
     text-align: center;
@@ -20,7 +21,7 @@
     width: 100%;
     h1 {
       font-size: 2.5rem;
-      color: white;
+      color: gray;
     }
     p {
       font-size: 10px;
@@ -29,7 +30,7 @@
     }
 
     .btn {
-      background-color: white;
+      background-color: gray;
       color: black;
       font-weight: bold;
       padding: 10px;
@@ -41,44 +42,24 @@
     }
   }
 }
-.activity-Card {
-  width: 100%;
-  height: 70vh;
+
+.card3 {
+  width: 60%;
+  height: 200px;
   overflow: hidden !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  text-align: center;
 
-  .content {
-    font-family: "Open Sans";
-    text-align: center;
-    padding: 10px;
-    opacity: 0;
-    transition: all 500ms ease-in-out;
-    transform: translate(0, 20px);
+  background-color: black;
+
+  .activity-title {
+    color: white;
+    font-weight: bolder;
+    font-size: 3vw;
     cursor: pointer;
-    h1 {
-      font-size: 14px;
-      color:red;
-    }
-    p {
-      font-size: 10px;
-      color: white;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      background-color: black;
-      color: white;
-      padding: 10px;
-      text-decoration: none;
-    }
-    &:hover {
-      opacity: 1;
-      transform: translate(0, 0px);
-    }
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+  .activity-title:hover {
+    transform: scale(1.2);
   }
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./About.css";
-import Image from "../../resources/Images/user4.png";
+import Image from "../../resources/Images/user3.png";
 import { withRouter } from "react-router-dom";
 
 const AboutMe = (props) => {

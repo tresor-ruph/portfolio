@@ -25,9 +25,8 @@ const Project = (props) => {
   };
 
   return (
-    <div className="section" id="work">
-      <div className="container">
-        <div className="work-wrapper">
+ 
+        <div className="project-wrapper">
           {view === "global" ? (
             <div className="grid">
               <Bounce left>
@@ -57,8 +56,6 @@ const Project = (props) => {
             </div>
           )}
         </div>
-      </div>
-    </div>
   );
 };
 
