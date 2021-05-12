@@ -63,3 +63,46 @@
     transform: scale(1.2);
   }
 }
+@media screen and (max-width: 700px) {
+  .card {
+    width: 50%;
+    height: 70px;
+    .content{
+      h1 {
+        font-size:1rem;
+        color: gray;
+      }
+      .btn {
+        background-color: gray;
+        color: black;
+        font-weight: bold;
+        padding: 5px;
+        text-decoration: none;
+      }
+    }
+  }
+  
+ 
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 70%;
+    height: 100px;
+    .content{
+      h1 {
+        font-size:1rem;
+        color: gray;
+      }
+      .btn {
+        background-color: gray;
+        color: black;
+        font-weight: bold;
+        padding: 5px;
+        text-decoration: none;
+      }
+    }
+  }
+  
+}
+

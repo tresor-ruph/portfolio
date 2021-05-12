@@ -14,6 +14,17 @@
   color: grey;
 }
 
+.btn-cv {
+  background-color: gray;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  
+}
 
 #title {
   font-size: 1.3rem;
@@ -34,4 +45,19 @@
   margin-left: 35%;
 }
 
+@media screen and (max-width: 1200px) {
+  .image {
+    display: none;
+  }
+  #demo {
+    margin-left: 20%;
+    margin-bottom: 5%;   
+    text-align: center;
+  }
+  .btn-cv {
 
+    margin-top: 10%;
+    width: 30vw;
+    left:32%;
+  }
+}

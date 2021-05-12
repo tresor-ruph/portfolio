@@ -1,11 +1,13 @@
-import React, { useEffect, useRef } from "react";
-import "./About.css";
+import React, { useEffect, useRef, useState } from "react";
+import "./About.scss";
 import Image from "../../resources/Images/user3.png";
 import { withRouter } from "react-router-dom";
+import {Zoom} from 'react-reveal'
 
 const AboutMe = (props) => {
   let contentText = useRef(null);
   let titleText = useRef(null);
+  const [showBtn, setShowBtn] = useState(false)
 
   useEffect(() => {
     const text =
@@ -17,7 +19,8 @@ const AboutMe = (props) => {
       if (i < text.length) {
         if (selector.current === null) return;
         if (text.charAt(i) === "?") {
-          selector.current.innerHTML += "<br />";
+          selector.current.innerHTML += "<br>";
+          setShowBtn(true)
           i++;
         } else if (text.charAt(i) === "$") {
           selector.current.innerHTML += "<br />";
@@ -50,7 +53,10 @@ const AboutMe = (props) => {
           <div ref={titleText} id="title"></div>
           <div ref={contentText}></div>
         </div>
-        <img src={Image} alt="User Avatar" className="image" />
+        {showBtn && <Zoom left>
+        <a className='btn-cv' href='https://github.com/tresor-ruph/portfolio/files/6469084/Tresor_Tekadam_-_Full_Stack_Developer.pdf'>Download resume</a>
+        </Zoom>}
+        <img src={'https://user-images.githubusercontent.com/52448401/118041515-3105b280-b373-11eb-8364-dc8bc64484c3.png' ||Image} alt="User Avatar" className="image" />
       </div>
     </div>
   );

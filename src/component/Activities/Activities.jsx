@@ -15,9 +15,11 @@ const Activities = () => {
   const displayActivityView = (view, id) => {
     setView(view);
     setprojId(id);
+    if(view !== "global"){
     setImgUrl(data.ActivityDetails[id].src);
     setDescription(data.ActivityDetails[id].description);
     setTitle(data.ActivityDetails[id].title);
+    }
   };
 
   return (
@@ -105,6 +107,8 @@ const Activities = () => {
             detailImageUrl={imgUrl}
             descript={description}
             title={title}
+            activityView={displayActivityView}
+
           />
         </div>
       )}

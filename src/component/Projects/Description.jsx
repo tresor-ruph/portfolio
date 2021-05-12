@@ -5,15 +5,14 @@ import Fade from "react-reveal/Fade";
 import { Carousel } from "react-bootstrap";
 
 const ProjectDescription = (props) => {
-  // const toggleView = () => {
-  //   props.view("global", "");
-  // };
+  const toggleView = () => {
+    props.view("global", "");
+  };
 
   return (
     <div className="main">
-      {/* <button className="btn-primary" onClick={() => toggleView()}>
-        return
-      </button> */}
+      <a onClick={() => toggleView()}><img src="https://img.icons8.com/android/24/ffffff/arrow.png" alt='arrow' width='30' className='return'/></a>
+      
       <div className="descrip">
         <div className="d-lg-flex ">
           <Fade left>
@@ -29,14 +28,7 @@ const ProjectDescription = (props) => {
                   </Carousel.Item>
                 ))}
               </Carousel>
-              {/* <div
-              className={"card2"}
-              style={{
-                backgroundImage: "url(" + props.detailImageUrl + " )",
-              }}
-            >
-              <div className="content"></div>
-            </div> */}
+  
             </div>
           </Fade>
           <Fade right>

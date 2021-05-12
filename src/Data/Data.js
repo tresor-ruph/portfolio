@@ -119,25 +119,25 @@ export default {
       },
       {
         id:1,
-        src: 'https://user-images.githubusercontent.com/52448401/117897488-3a374680-b2c3-11eb-85af-c929b54f184e.JPG',
+        src: ['https://user-images.githubusercontent.com/52448401/117897488-3a374680-b2c3-11eb-85af-c929b54f184e.JPG'],
         title: 'CyberSecurity Challenge',
         description: "A multiplayer game based on the famous Japanese chess game. Based on the MVC design pattern this game allows you to play both with console or a user interface and you can switch views when ever you want. You also have the possibility to play remotely but need to be connected on the same server"
       },
       {
         id:2,
-        src: 'https://user-images.githubusercontent.com/52448401/117897488-3a374680-b2c3-11eb-85af-c929b54f184e.JPG',
+        src: ['https://user-images.githubusercontent.com/52448401/117897488-3a374680-b2c3-11eb-85af-c929b54f184e.JPG'],
         title: 'Tutoring Sessions',
         description: "A multiplayer game based on the famous Japanese chess game. Based on the MVC design pattern this game allows you to play both with console or a user interface and you can switch views when ever you want. You also have the possibility to play remotely but need to be connected on the same server"
       },
       {
         id:3,
-        src: 'https://user-images.githubusercontent.com/52448401/117897488-3a374680-b2c3-11eb-85af-c929b54f184e.JPG',
+        src: ['https://user-images.githubusercontent.com/52448401/117897488-3a374680-b2c3-11eb-85af-c929b54f184e.JPG'],
         title: 'Udemy Courses',
         description: "A multiplayer game based on the famous Japanese chess game. Based on the MVC design pattern this game allows you to play both with console or a user interface and you can switch views when ever you want. You also have the possibility to play remotely but need to be connected on the same server"
       },
       {
         id:4,
-        src: 'https://user-images.githubusercontent.com/52448401/117897488-3a374680-b2c3-11eb-85af-c929b54f184e.JPG',
+        src: ['https://user-images.githubusercontent.com/52448401/117897488-3a374680-b2c3-11eb-85af-c929b54f184e.JPG'],
         title: 'Ephec 70 hours',
         description: "A multiplayer game based on the famous Japanese chess game. Based on the MVC design pattern this game allows you to play both with console or a user interface and you can switch views when ever you want. You also have the possibility to play remotely but need to be connected on the same server"
       }

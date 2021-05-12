@@ -1,6 +1,6 @@
 .main {
   width: 100vw;
-  margin-top: 12rem;
+  margin-top: 6rem;
   margin-left: 5rem;
   
 }
@@ -52,4 +52,29 @@
   padding: 10px;
   margin-right: 5%;
   text-decoration: none;
+}
+.return {
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 700px) {
+  
+  .image-div {
+    width: 60vw;
+    height: 30vh;
+  }
+  .content-div {
+    margin-left: 0;
+  }
+ 
+}
+@media screen and (max-width: 1000px) {
+  
+  .image-div {
+    width: 60vw;
+    height: 40vh;
+  }
+  .content-div {
+    margin-left: 2%;
+  }
+ 
 }
