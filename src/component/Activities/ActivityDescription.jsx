@@ -1,87 +1,42 @@
-// import "./ActivityDescription.scss";
-// import React from "react";
-// import { Chrono } from "react-chrono";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from "react";
+import "./ActivityDescription.scss";
+import Fade from "react-reveal/Fade";
+import {Carousel} from 'react-bootstrap'
+const ActivityDescription = (props) => {
+  return (
+    <div className="main">
+      <div className="descrip2">
+        <div className="d-lg-flex ">
+          <Fade left>
+            <div className="image-descript-div">
+                <Carousel>
+                    {
+                        props.detailImageUrl.map((elt, index) => 
+                        (
+                            <Carousel.Item interval={4000} key={index}>
+                            <img
+                              class="d-block w-100 img-hover"
+                              src={elt}
+                              alt="First slide"
+                            />
+                            </Carousel.Item>
+                        ))
+                    }
+                </Carousel>
+              
+            </div>
+          </Fade>
+          <Fade right>
+            <div className=" content-div2">
+              <h3>{props.title}</h3>
+              <p>{props.descript}</p>
+            </div>
+          </Fade>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-// const ActivityDetails = () => {
-//   const items = [
-//     {
-//       title: "May 1940",
-//       cardTitle: "Dunkirk",
-//       cardSubtitle:
-//         "Men of the British Expeditionary Force (BEF) wade out to..",
-//       cardDetailedText:
-//         "Men of the British Expeditionary Force (BEF) wade out to Men ",
-//       media: {
-//         type: "IMAGE",
-//         source: {
-//           url:
-//             "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60",
-//         },
-//       },
-//     },
-//     {
-//       title: "May 1940",
-//       cardTitle: "Dunkirk",
-//       cardSubtitle:
-//         "Men of the British Expeditionary Force (BEF) wade out to..",
-//       cardDetailedText:
-//         "Men of the British Expeditionary Force (BEF) wade out to M.qsdqjsdh qshdkqjs qsjhdkq ",
-//       media: {
-//         type: "IMAGE",
-//         source: {
-//           url:
-//             "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60",
-//         },
-//       },
-//     },
-//     {
-//       title: "May 1940",
-//       cardTitle: "Dunkirk",
-//       cardSubtitle:
-//         "Men of the British Expeditionary Force (BEF) wade out to..",
-//       cardDetailedText:
-//         "Men of the British Expeditionary Force (BEF) wade out to",
-//       media: {
-//         type: "IMAGE",
-//         source: {
-//           url:
-//             "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60",
-//         },
-//       },
-//     },
-
-//     {
-//       title: "May 1940",
-//       cardTitle: "Dunkirk",
-//       cardSubtitle:
-//         "Men of the British Expeditionary Force (BEF) wade out to..",
-//       cardDetailedText:
-//         "Men of the British Expeditionary Force (BEF) wade out to Men ",
-//       media: {
-//         type: "IMAGE",
-//         source: {
-//           url:
-//             "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60http://someurl/image.jpg",
-//         },
-//       },
-//     },
-//   ];
-
-//   return (
-//     <div className="descrip-details">
-//       <div className="card chrono" style={{ width: "50%", height: "80%" }}>
-//         <Chrono
-//           items={items}
-//           // theme={{
-//           //   primary: "black",
-//           //   secondary: "white",
-//           //   cardBgColor: "back",
-//           //   cardForeColor: "white",
-//           // }}
-//           // mode="VERTICAL_ALTERNATING"
-//         />
-//       </div>
-//     </div>
-//   );
-// };
-// export default ActivityDetails;
+export default ActivityDescription;

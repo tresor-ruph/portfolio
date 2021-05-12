@@ -2,22 +2,26 @@
 import React, { useState } from "react"
 import './card.scss'
 import Summary from '../Modals/summary'
-import {  } from "react-bootstrap/esm/Image"
 
-const Card = ({ heading, paragraph, imgUrl, projectId,id, view, activity }) => {
+const Card = ({ heading, imgUrl, projectId,id, view, activityView, activity }) => {
+  const [SummaryShow, setSummaryShow] = useState(false)
+
+
   const displayProject = (id) => {
     view('details', id)
   }
-  const [SummaryShow, setSummaryShow] = useState(false)
-  const displayModal = () => {
-    if (id=== 5) {
-      setSummaryShow(true)
 
-    }
+  const displayDetail = () => {
+    id === 4 ? setSummaryShow(true) : activityView('details', id)
   }
+
+
   const hideSummary=(x) => {
     setSummaryShow(x)
   }
+
+
+
   return (
     <div>
       {SummaryShow && <Summary show={SummaryShow} hide={hideSummary} />}
@@ -34,7 +38,7 @@ const Card = ({ heading, paragraph, imgUrl, projectId,id, view, activity }) => {
 
         ) : (
           <div className="card3">
-            <div className="activity-title"> <a onClick={() => displayModal()}>{heading}</a></div>
+            <div className="activity-title"> <a onClick={() => displayDetail()}>{heading}</a></div>
             <div className="activity-content">
 
             </div>
