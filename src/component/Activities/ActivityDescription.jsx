@@ -2,7 +2,7 @@
 import React from "react";
 import "./ActivityDescription.scss";
 import Fade from "react-reveal/Fade";
-import {Carousel} from 'react-bootstrap'
+import { Carousel } from "react-bootstrap";
 const ActivityDescription = (props) => {
   return (
     <div className="main">
@@ -10,21 +10,17 @@ const ActivityDescription = (props) => {
         <div className="d-lg-flex ">
           <Fade left>
             <div className="image-descript-div">
-                <Carousel>
-                    {
-                        props.detailImageUrl.map((elt, index) => 
-                        (
-                            <Carousel.Item interval={4000} key={index}>
-                            <img
-                              class="d-block w-100 img-hover"
-                              src={elt}
-                              alt="First slide"
-                            />
-                            </Carousel.Item>
-                        ))
-                    }
-                </Carousel>
-              
+              <Carousel>
+                {props.detailImageUrl.map((elt, index) => (
+                  <Carousel.Item interval={4000} key={index}>
+                    <img
+                      class="d-block w-100 img-hover"
+                      src={elt}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                ))}
+              </Carousel>
             </div>
           </Fade>
           <Fade right>
