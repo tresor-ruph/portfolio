@@ -11,7 +11,7 @@ const AboutMe = (props) => {
 
   useEffect(() => {
     const text =
-      "/Hi, my name is Tekadam Tresor% I am a software & web developer living in Belguim.?";
+      "/Hi, my name is Tekadam Tresor% I am a software & web developer living in Belguim.$Feel free to take a look at my latest projects on the 'project' section.$You can also download my resume here?";
 
     let i = 0;
     let selector = contentText;

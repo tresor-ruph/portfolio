@@ -1,6 +1,6 @@
 import Card from "../card/Card";
 import "./Activities.scss";
-import { Fade } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 import data from "../../Data/Data";
 import { useState } from "react";
 import ActivityDescription from "./ActivityDescription";
@@ -15,15 +15,9 @@ const Activities = () => {
 
 
   const displayActivityView = (view, id) => {
-    setView(view);
-    setprojId(id);
-    if(id === 4){
-      history.push('/activity/summary')
-    }else if(id !==4 && view !== "global"){
-    setImgUrl(data.ActivityDetails[id].src);
-    setDescription(data.ActivityDetails[id].description);
-    setTitle(data.ActivityDetails[id].title);
-    }
+    
+    id === 4 ?history.push('/activity/summary'):history.push('/Activities/details/'+id)
+
   };
 
   return (
@@ -103,7 +97,23 @@ const Activities = () => {
                 />
               </div>
             </Fade>
+         
           </div>
+          <div className= 'row'>
+          <Zoom >
+              <div className="col">
+                <Card
+                  heading={data.activities[5].title}
+                  activity={true}
+                  id={data.activities[5].id}
+                  image={data.activities[5].imageSrc}
+                  title={data.activities[5].title}
+                  description={data.activities[5].description}
+                  activityView={displayActivityView}
+                />
+              </div>
+            </Zoom>
+            </div>
         </div>
       ) : (
         <div>

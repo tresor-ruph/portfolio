@@ -8,6 +8,9 @@
    color: aliceblue;
    margin-right: 10%;
    font-size: 0.85rem;
+   p{
+    font-size: 1.3rem;
+   }
  }
  .image-descript-div {
    width: 60vw;
@@ -21,7 +24,23 @@
  @media screen and (max-width: 700px) {
   .image-descript-div {
     width: 60vw;
-    height: 20vh;
+    height: 30vh;
+    margin-left: -1%;
+  }
+  .content-div2{
+    h3{
+      font-size: 1.2rem;
+    }
+    p{
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .image-descript-div {
+    width: 60vw;
+    height: 30vh;
     margin-left: -1%;
   }
   .content-div2{

@@ -115,6 +115,15 @@ export default {
         url: "http://chetanverma.com/",
         fade: 'right',
       },
+      {
+        id:5,
+        title: "SuperProf",
+       
+        imageSrc:
+          "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+        url: "http://chetanverma.com/",
+        fade: 'bottom',
+      },
      
     ],
 
@@ -122,7 +131,7 @@ export default {
     [
       {
         id:0,
-        src: ['https://udemy-certificate.s3.amazonaws.com/image/UC-7b3e0277-4164-4dae-8cab-632319a851c0.jpg','https://user-images.githubusercontent.com/52448401/118055431-65d03480-b388-11eb-9af8-792981612734.JPG','https://user-images.githubusercontent.com/52448401/118055748-f73fa680-b388-11eb-84b7-ab0e39d0cd7a.JPG','https://user-images.githubusercontent.com/52448401/118055810-18a09280-b389-11eb-838f-53fb5fb45876.JPG'],
+        src: ['https://udemy-certificate.s3.amazonaws.com/image/UC-7b3e0277-4164-4dae-8cab-632319a851c0.jpg','https://user-images.githubusercontent.com/52448401/118055431-65d03480-b388-11eb-9af8-792981612734.JPG','https://user-images.githubusercontent.com/52448401/118170266-2eb25f80-b42a-11eb-9152-a06cac6f87f5.JPG','https://user-images.githubusercontent.com/52448401/118055748-f73fa680-b388-11eb-84b7-ab0e39d0cd7a.JPG','https://user-images.githubusercontent.com/52448401/118055810-18a09280-b389-11eb-838f-53fb5fb45876.JPG'],
         title: 'online Courses',
         description: "During my studies I had the opportunity to follow a large number of online courses in parallel with my studies. These courses were mainly followed on openclassroom and Udemy. All these trainings have complemented my skills acquired during my studies in order to prepare me for the professional world."
       },
@@ -150,6 +159,12 @@ export default {
         src: ['https://user-images.githubusercontent.com/52448401/117897488-3a374680-b2c3-11eb-85af-c929b54f184e.JPG'],
         title: 'Summary',
         description: "A multiplayer game based on the famous Japanese chess game. Based on the MVC design pattern this game allows you to play both with console or a user interface and you can switch views when ever you want. You also have the possibility to play remotely but need to be connected on the same server"
+      },
+      {
+        id:5,
+        src: ['https://user-images.githubusercontent.com/52448401/118170562-84870780-b42a-11eb-95da-48f854238233.JPG'],
+        title: 'SuperProf',
+        description: "As a partime Job i offer Maths and electronics tutorials to others students. I use the plateform 'superprof' which is a website that put into contact students willing to help with those in need of help. These tutoring sessions allowed me to keep my knowledge up to datesss"
       }
     ]
 
