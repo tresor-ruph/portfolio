@@ -44,7 +44,7 @@ const Contact = () => {
       name,
     };
     axios
-      .post("http://localhost:8000/mailTo", data)
+      .post("https://portfolio-tresor.herokuapp.com/mailTo", data)
       .then((res) => {
         console.log(res);
         showSuccessMess();
