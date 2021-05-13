@@ -3,13 +3,21 @@ import React from "react";
 import "./ActivityDescription.scss";
 import Fade from "react-reveal/Fade";
 import { Carousel } from "react-bootstrap";
+
 const ActivityDescription = (props) => {
   const toggleView = () => {
     props.activityView("global", "");
   };
   return (
     <div className="main">
-      <a onClick={() => toggleView()}><img src="https://img.icons8.com/android/24/ffffff/arrow.png" alt='arrow' width='30' className='return'/></a>
+      <a onClick={() => toggleView()}>
+        <img
+          src="https://img.icons8.com/android/24/ffffff/arrow.png"
+          alt="arrow"
+          width="30"
+          className="return"
+        />
+      </a>
       <div className="descrip2">
         <div className="d-lg-flex ">
           <Fade left>

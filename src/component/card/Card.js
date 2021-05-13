@@ -6,25 +6,21 @@ import Summary from '../Modals/summary'
 const Card = ({ heading, imgUrl, projectId,id, view, activityView, activity }) => {
   const [SummaryShow, setSummaryShow] = useState(false)
 
-
   const displayProject = (id) => {
     view('details', id)
   }
 
   const displayDetail = () => {
-    id === 4 ? setSummaryShow(true) : activityView('details', id)
+     activityView('details', id)
   }
-
 
   const hideSummary=(x) => {
     setSummaryShow(x)
   }
 
-
-
   return (
     <div>
-      {SummaryShow && <Summary show={SummaryShow} hide={hideSummary} />}
+      {/* {SummaryShow && <Summary show={SummaryShow} hide={hideSummary} />} */}
       {
         !activity ? (
           <div className="card " style={{ backgroundImage: "url(" + imgUrl + " )" }} >

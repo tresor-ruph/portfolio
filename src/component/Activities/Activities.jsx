@@ -4,18 +4,22 @@ import { Fade } from "react-reveal";
 import data from "../../Data/Data";
 import { useState } from "react";
 import ActivityDescription from "./ActivityDescription";
-
+import {useHistory} from 'react-router-dom'
 const Activities = () => {
   const [view, setView] = useState('global');
   const [projId, setprojId] = useState(null);
   const [imgUrl, setImgUrl] = useState(null);
   const [description, setDescription] = useState(null);
   const [title, setTitle] = useState(null);
+  let history = useHistory()
+
 
   const displayActivityView = (view, id) => {
     setView(view);
     setprojId(id);
-    if(view !== "global"){
+    if(id === 4){
+      history.push('/activity/summary')
+    }else if(id !==4 && view !== "global"){
     setImgUrl(data.ActivityDetails[id].src);
     setDescription(data.ActivityDetails[id].description);
     setTitle(data.ActivityDetails[id].title);
