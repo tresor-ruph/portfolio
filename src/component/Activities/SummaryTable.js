@@ -85,8 +85,8 @@ const SummaryTable = () => {
                         </tr>
                         <tr>
                             <td>IT.meet.IT</td>
-                            <td>4</td>
-                            <td>4 </td>
+                            <td>3</td>
+                            <td>3 </td>
                             <td><btn style={{ backgroundColor: '#57B27C', padding: '0px'}} className='btn detail-btn' onClick={() =>navigateTo(3)}>Detail</btn></td>
 
                         </tr>
@@ -99,8 +99,8 @@ const SummaryTable = () => {
                         </tr>
                         <tr>
                             <td style={{fontWeight: 'bolder'}}>Total Time</td>
-                            <td style={{fontWeight: 'bolder'}}>243</td>
-                            <td style={{fontWeight: 'bolder'}}>64 </td>
+                            <td style={{fontWeight: 'bolder'}}>242</td>
+                            <td style={{fontWeight: 'bolder'}}>63 </td>
 
                         </tr>
                     </tbody>

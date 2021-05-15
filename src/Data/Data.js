@@ -5,8 +5,6 @@ export default {
   projects: [
     {
       title: "SHOGI CHESS GAME",
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
       imageSrc: 'https://user-images.githubusercontent.com/52448401/117575210-22a06800-b0e1-11eb-8856-4b2e58fca10d.png',
       url: "http://chetanverma.com/",
       detailImageUrl: ["https://user-images.githubusercontent.com/52448401/117576749-5aaaa980-b0e7-11eb-9e53-df94a4a02e3f.JPG"],
@@ -17,8 +15,6 @@ export default {
     },
     {
       title: "MOTUS GAME",
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
       imageSrc: 'https://user-images.githubusercontent.com/52448401/117575210-22a06800-b0e1-11eb-8856-4b2e58fca10d.png',
       detailImageUrl: ['https://user-images.githubusercontent.com/52448401/117579884-59807900-b0f5-11eb-8175-5e5e7c187e08.PNG'],
       contentDescription: "Come and try my simulation of the television game 'motus'. This game is based on the MVC design pattern and allows you two play with both console and userInterface. It also has 3 levels of dificulties allowing you to evolve in the game",
@@ -27,10 +23,7 @@ export default {
     },
     {
       title: "HELP RECOVER",
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
       imageSrc: "https://user-images.githubusercontent.com/52448401/117574879-92155800-b0df-11eb-84e4-545a74fd0303.png",
-      // detailImageUrl:'https://user-images.githubusercontent.com/52448401/117580519-969a3a80-b0f8-11eb-810d-669926109132.jpg',
       detailImageUrl: ['https://user-images.githubusercontent.com/52448401/117580567-c8130600-b0f8-11eb-9137-70030ecd4650.JPG'],
       contentDescription: 'Help recover is a mobile application that connects you with people around you who are willing to provide a specific service. The application has a messaging service and video call allowing users to chat with each other.',
       technologies: ['React Native,', 'Express JS,', 'Firebase,', 'Heroku,', 'Webrtc.'],
@@ -79,8 +72,6 @@ export default {
       {
         id:1,
         title: "CyberSecurity Challenge",
-        para:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", 
         imageSrc:
           "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
         url: "http://chetanverma.com/",
@@ -89,8 +80,7 @@ export default {
       {
         id:2,
         title: "Tutoring Sessions",
-        para:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", 
+      
         imageSrc:
           "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
         url: "http://chetanverma.com/",
@@ -99,8 +89,6 @@ export default {
       {
         id:3,
         title: "IT.Meet.IT Smals",
-        para:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", 
         imageSrc:
           "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
         url: "http://chetanverma.com/",

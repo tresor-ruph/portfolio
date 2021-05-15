@@ -143,7 +143,7 @@ const Contact = () => {
                   alt="linkedin"
                   className="social-icons"
                 />
-                <a href="www.linkedin.com/in/tresor-tekadam-970791176">
+                <a target="_blank" href="https://www.linkedin.com/in/tresor-tekadam-970791176" rel="noreferrer">
                   <span className="socialText">Tresor Tekadam</span>
                 </a>
               </div>

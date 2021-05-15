@@ -1,10 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react"
 import './card.scss'
-import Summary from '../Modals/summary'
 
-const Card = ({ heading, imgUrl, projectId,id, view, activityView, activity }) => {
-  const [SummaryShow, setSummaryShow] = useState(false)
+const Card = ({ heading, imgUrl, projectId,id, view, activityView, activity, summary }) => {
 
   const displayProject = (id) => {
     view('details', id)
@@ -14,13 +12,9 @@ const Card = ({ heading, imgUrl, projectId,id, view, activityView, activity }) =
      activityView('details', id)
   }
 
-  const hideSummary=(x) => {
-    setSummaryShow(x)
-  }
 
   return (
     <div>
-      {/* {SummaryShow && <Summary show={SummaryShow} hide={hideSummary} />} */}
       {
         !activity ? (
           <div className="card " style={{ backgroundImage: "url(" + imgUrl + " )" }} >
@@ -34,7 +28,7 @@ const Card = ({ heading, imgUrl, projectId,id, view, activityView, activity }) =
 
         ) : (
           <div className="card3">
-            <div className="activity-title"> <a onClick={() => displayDetail()}>{heading}</a></div>
+            <div className={summary ?"activity-title summary" : "activity-title"}> <a onClick={() => displayDetail()}>{heading}</a></div>
             <div className="activity-content">
 
             </div>

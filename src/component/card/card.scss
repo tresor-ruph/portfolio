@@ -59,6 +59,9 @@
     text-decoration: none;
     transition: transform 0.2s;
   }
+  .summary {
+    color: red;
+  }
   .activity-title:hover {
     transform: scale(1.2);
   }
